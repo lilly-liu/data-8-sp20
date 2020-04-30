@@ -1,14 +1,15 @@
 test = {
-  'name': 'q3_0_4',
+  'name': 'q3_1_1',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> # It looks like you've choosen an illegal option (not within 1-5);
-          >>> top_left >= 1 and top_left <= 5
-          True
+          >>> cancer
+          cancer status | negative | positive
+          healthy       | 9702     | 198
+          sick          | 10       | 90
           """,
           'hidden': False,
           'locked': False

@@ -1,12 +1,20 @@
 test = {
-  'name': 'q3_0_5',
+  'name': 'q2_0_1',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> movie_genre_guess >= 1 and movie_genre_guess <= 2
+          >>> np.isclose(probability_large_shiny, 4/13)
+          True
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> 0 < probability_large_shiny < 1 
           True
           """,
           'hidden': False,

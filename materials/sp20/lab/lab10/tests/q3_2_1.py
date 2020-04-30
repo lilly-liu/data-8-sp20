@@ -1,13 +1,12 @@
 test = {
-  'name': 'q3_0_1',
+  'name': 'q3_2_1',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> # It looks like you've choosen an illegal option (not within 1-5);
-          >>> bottom_left >= 1 and bottom_left <= 5
+          >>> rough_prob_sick_given_positive == 4
           True
           """,
           'hidden': False,

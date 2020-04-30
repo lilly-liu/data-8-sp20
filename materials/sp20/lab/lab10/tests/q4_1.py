@@ -1,12 +1,12 @@
 test = {
-  'name': 'q3_1',
+  'name': 'q4_1',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> 0.0 <= distance_first_to_second <= 0.1
+          >>> np.isclose(p_pos_given_cancer, 0.9)
           True
           """,
           'hidden': False,
@@ -14,15 +14,7 @@ test = {
         },
         {
           'code': r"""
-          >>> np.isclose(distance(make_array(1, 2), make_array(1, 2)), 0)
-          True
-          """,
-          'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> np.isclose(distance(make_array(1, 2, 3), make_array(2, 4, 5)), 3)
+          >>> np.isclose(p_pos_given_nocancer, 0.02)
           True
           """,
           'hidden': False,

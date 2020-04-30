@@ -1,13 +1,12 @@
 test = {
-  'name': 'q3_0_2',
+  'name': 'q2_1_2',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> # It looks like you've choosen an illegal option (not within 1-5);
-          >>> bottom_right >= 1 and bottom_right <= 5
+          >>> np.isclose(probability_large_given_shiny, 4/10)
           True
           """,
           'hidden': False,
